@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: "Adobe Garamond", serif;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Box sizing: Reset to border-box
+ 
+ * apply a natural box layout model to all elements, 
+ * but allowing components to change
+ */
+  
+ html {
+   box-sizing: border-box;
+ }
+
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
+
+/*
+ * Clearfix: contain floats
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+
