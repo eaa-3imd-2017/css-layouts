@@ -181,19 +181,16 @@
   </footer>
   <script>
     
+    // Navigation d'une section à l'autre
+
     window.addEventListener("load", NavigateSections, false);
 
     function NavigateSections() {
 
-      console.log("loaded!");
-
-      // navigation d'une section à l'autre
-
       var navItems = document.querySelectorAll(".navigation a");
 
-      // var i;
+      var i;
       for (i = 0; i < navItems.length; i++) {
-
         navItems[i].addEventListener(
           "click", LoadSection, false
         );
@@ -230,7 +227,7 @@
         var NewPage = document.getElementById(target);
         if (NewPage) {
           NewPage.style.zIndex = 5;
-          NewPage.className += " newpage";
+          NewPage.className = "newpage";
         }
 
         event.preventDefault();
