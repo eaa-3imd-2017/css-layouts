@@ -12,7 +12,7 @@ Voici quelques éléments communs que tous les projets utilisent:
 
 Voici les exemples de mise en page proposés:
 
-## Carousel.html
+## Carousel.html
 
 Une mise en page comprenant plusieurs sections, qui deviennent visibles au fur et a mesure de l'avancement. La navigation utilise le JavaScript.
 
