@@ -12,8 +12,13 @@ Voici quelques éléments communs que tous les projets utilisent:
 
 Voici les exemples de mise en page proposés:
 
-## Carousel.html
+## carousel.html
 
 Une mise en page comprenant plusieurs sections, qui deviennent visibles au fur et a mesure de l'avancement. La navigation utilise le JavaScript.
 
-Le code est mis à disposition sans restrictions de licence et peut être utilisé librement (the unlicense).
+* [Voir l'exemple](carousel.html)
+* [Notes explicatives](notes/carousel.md)
+
+## Licence 
+
+Le code est mis à disposition sans restrictions de licence et peut être utilisé librement ([The Unlicense](http://unlicense.org/)).
