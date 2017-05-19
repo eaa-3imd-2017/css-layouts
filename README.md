@@ -19,6 +19,12 @@ Une mise en page comprenant plusieurs sections, qui deviennent visibles au fur e
 * [Voir l'exemple](carousel.html)
 * [Notes explicatives](notes/carousel.md)
 
+## carousel-vertical.html
+
+Variation sur la mise en page précédente, avec navigation verticale.
+
+* [Voir l'exemple](carousel-vertical.html)
+
 ## batonturbo.html
 
 Exemple de chargement de webfont.
@@ -32,6 +38,7 @@ Un effet de coin transparent, obtenu avec un dégradé CSS.
 
 * [Page d'exemple](gradient-corners.html)
 * [Article de Lea Verou](http://lea.verou.me/2011/03/beveled-corners-negative-border-radius-with-css3-gradients/) sur cette technique
+* [Documentation couleurs et dégradés](http://cours-web.ch/css/color)
 
 ## Licence 
 

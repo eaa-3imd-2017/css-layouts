@@ -1,0 +1,308 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Carousel Layout</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://eaa-3imd-2017.github.io/header-generique/header-generique.css">
+  <style>
+
+  body {
+    background: #ddd;
+    display: flex;
+    flex-direction: column;
+    font-family: "Avenir Next", sans-serif;
+  }
+
+  #nav-projets {
+    z-index: 99;    
+  }
+
+  .cadre {
+    overflow-x: hidden;
+    position: relative;
+    border: 0px solid blue;
+    height: calc(100vh - 7.6rem);
+    height: 100vh;
+  }
+
+  .navigation {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100vh;
+  }
+
+  .navigation ol {
+    background: #A3A3A3;
+    width: 3rem;
+    height: 100%;
+    margin: 0;
+    padding: 25vh 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  @media only screen and (min-width: 40em) {
+      
+      .navigation {
+        left: calc(50% - 1.5rem);
+      }
+
+  }
+
+  .navigation li {
+    display: block;
+    margin: 0;
+    list-style: none;
+  }
+
+  .navigation a {
+    font: 0/0 a;
+    text-shadow: none;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #fff;
+  }
+
+  .cadre section {
+    position: absolute;
+    padding: 0;
+    top: 1em;
+    left: 1em;
+    width: calc(100% - 2em);
+    height: calc(100% - 2em);
+    background: #EAA1A1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media only screen and (min-width: 40em) {
+
+      .cadre section {
+        flex-direction: row;
+      }
+  }
+
+
+  .cadre section:nth-of-type(1n+2) {
+    opacity: 0;
+  }
+
+  .cadre h2 {
+    position: absolute;
+    top: 3em;
+    left: 3em;
+  }
+
+  .cadre p {
+    background: lightgreen;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 10em;
+    margin: 0;
+    color: #EAA1A1;
+  }
+
+  .cadre p:nth-child(even) {
+    background: transparent;
+    color: lightgreen;
+  }
+
+  
+
+  footer {
+    position: relative;
+    background: #999;
+    width: 100%;
+    padding: 0.5em;
+  }
+
+  .newpage {
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+
+  .prevpage {
+    animation-name: fadeout;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+
+  .cadre .firstpage {
+    z-index: 1;
+    opacity: 1;
+  }
+
+  @keyframes fadein {
+          0% {
+              opacity: 0;
+              z-index: 5;
+          }
+
+          100% {
+              opacity: 1;
+          }
+  }
+
+  @keyframes fadeout {
+          0% {
+              opacity: 1;
+          }
+  
+          100% {
+              opacity: 0;
+          }
+  }
+
+ 
+  </style>
+</head>
+<body>
+  <nav id="nav-projets"></nav>
+
+  <main class="cadre">
+
+    <nav class="navigation">
+      <ol>
+        <li><a href="#page-1">Page 1</a></li>
+        <li><a href="#page-2">Page 2</a></li>
+        <li><a href="#page-3">Page 3</a></li>
+        <li><a href="#page-4">Page 4</a></li>
+        <li><a href="#page-5">Page 5</a></li>
+        <li><a href="#page-6">Page 6</a></li>
+      </ol>
+    </nav>
+
+    <section id="page-1" class="newpage firstpage">
+      <h2>page 1</h2>
+      <p>A</p>
+      <p>B</p>
+    </section>
+
+    <section id="page-2">
+      <h2>page 2</h2>
+      <p>C</p>
+      <p>D</p>
+    </section>
+
+    <section id="page-3">
+      <h2>page 3</h2>
+      <p>E</p>
+      <p>F</p>
+    </section>
+
+    <section id="page-4">
+      <h2>page 4</h2>
+      <p>G</p>
+      <p>H</p>
+    </section>
+
+    <section id="page-5">
+      <h2>page 5</h2>
+      <p>I</p>
+      <p>J</p>
+    </section>
+
+    <section id="page-6">
+      <h2>page 6</h2>
+      <p>K</p>
+      <p>L</p>
+    </section>
+    
+  </main>
+
+  <footer>
+
+    <small>contenu pied de page</small>
+  
+  </footer>
+  <script>
+    
+    // Navigation d'une section à l'autre
+
+    window.addEventListener("load", NavigateSections, false);
+
+    function NavigateSections() {
+
+      var navItems = document.querySelectorAll(".navigation a");
+
+      var i;
+      for (i = 0; i < navItems.length; i++) {
+        navItems[i].addEventListener(
+          "click", LoadSection, false
+        );
+      }
+
+      // document.querySelector(".cadre").addEventListener(
+      //     "click", Onscrollfnction, false
+      // );
+
+    };
+
+
+    function LoadSection(event) {
+        
+        var navItems = document.querySelectorAll(".navigation a");
+
+        // coloriser en blanc tous les liens  
+        for (i = 0; i < navItems.length; i++) {
+          navItems[i].style.backgroundColor = "#fff";
+        }
+
+        // coloriser en rouge le lien qu'on vient de cliquer
+        this.style.backgroundColor = "lightgreen";
+
+        var target = this.getAttribute("href");
+        // resultat : #page-4
+        // supprimer le "#""
+        target = target.substring(1);
+        
+        // masquer les pages anciennes :
+
+        var ForgetPage = document.querySelector(".prevpage");
+        if (ForgetPage) {
+          ForgetPage.style.zIndex = 1;
+          ForgetPage.style.opacity = 0;
+          ForgetPage.className = "";
+        }
+
+        // garder visible la page précédente :
+
+        var PrevPage = document.querySelector(".newpage");
+        if (PrevPage) {
+          PrevPage.style.zIndex = 4;
+          PrevPage.className = "prevpage";
+        }
+
+        // faire apparaitre la nouvelle page:
+
+        var NewPage = document.getElementById(target);
+        if (NewPage) {
+          NewPage.style.zIndex = 5;
+          NewPage.className = "newpage";
+        }
+
+        event.preventDefault();
+
+    }
+
+  </script>
+  <script src='https://eaa-3imd-2017.github.io/header-generique/header-generique.js'></script>
+  
+</body>
+</html>
