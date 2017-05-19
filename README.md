@@ -26,6 +26,13 @@ Exemple de chargement de webfont.
 * [Page d'exemple](batonturbo.html)
 * [Notes explicatives](notes/batonturbo.md)
 
+## gradient-corners.html
+
+Un effet de coin transparent, obtenu avec un dégradé CSS.
+
+* [Page d'exemple](gradient-corners.html)
+* [Article de Lea Verou](http://lea.verou.me/2011/03/beveled-corners-negative-border-radius-with-css3-gradients/) sur cette technique
+
 ## Licence 
 
 Le code est mis à disposition sans restrictions de licence et peut être utilisé librement ([The Unlicense](http://unlicense.org/)).
