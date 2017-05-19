@@ -19,6 +19,13 @@ Une mise en page comprenant plusieurs sections, qui deviennent visibles au fur e
 * [Voir l'exemple](carousel.html)
 * [Notes explicatives](notes/carousel.md)
 
+## batonturbo.html
+
+Exemple de chargement de webfont.
+
+* [Page d'exemple](batonturbo.html)
+* [Notes explicatives](notes/batonturbo.md)
+
 ## Licence 
 
 Le code est mis à disposition sans restrictions de licence et peut être utilisé librement ([The Unlicense](http://unlicense.org/)).
