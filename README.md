@@ -6,9 +6,9 @@ Pour chaque exemple, le code (CSS et JavaScript) est contenu directement dans le
 
 Voici quelques éléments communs que tous les projets utilisent:
 
-- **CSS / normalize.min.css** : "Normalize" est un reset CSS qui corrige certains comportements par défaut de navigateurs. Licence: MIT License.
-- **CSS / main.css** : Contient quelques éléments de base que nous utilisons partout. Applique le fonctionnement **box sizing: border-box** à tous les éléments.
-- **JS / prefixfree.min.js** : Cet outil, créé par Lea Verou, ajoute les préfixes navigateurs à notre CSS lorsque c'est nécessaire. Cela nous permet d'écrire un CSS plus sobre, sans préfixes redondants. Licence: MIT license.
+- **CSS / normalize.min.css** : [Normalize](https://github.com/necolas/normalize.css/) est un reset CSS qui corrige certains comportements par défaut de navigateurs.
+- **CSS / main.css** : Contient quelques éléments de base que nous utilisons partout. Applique le fonctionnement **box sizing: border-box** à tous les éléments (voir [documentation](http://cours-web.ch/css/box-model)).
+- **JS / prefixfree.min.js** : Cet outil, [créé par Lea Verou](http://leaverou.github.io/prefixfree/), ajoute les préfixes navigateurs à notre CSS lorsque c'est nécessaire. Cela nous permet d'écrire un CSS plus sobre, sans préfixes redondants.
 
 Voici les exemples de mise en page proposés:
 
