@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Carousel Layout</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src='js/prefixfree.min.js'></script>
+  <style>
+
+  body {
+    background: #ddd;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .colors {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .colors li {
+    padding: 1em 1em 2em 1em;
+    list-style: none;
+    width: 7em;
+    color: transparent;
+    background-color: #888
+  }
+
+  .colors li:hover {
+    background: linear-gradient(0deg, transparent 15px, SlateBlue 0),
+    linear-gradient(45deg, transparent 10px, DarkSlateBlue 0);
+
+    animation-name: expand;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+
+
+  @keyframes expand {
+          0% {
+
+          }
+
+          100% {
+              width: 30vw;
+              color: #fff;
+
+          }
+  }
+
+
+
+  </style>
+</head>
+<body>
+
+  <main class="cadre">
+
+      <ul class="colors">
+        <li><span>Color 1</span></li>
+        <li><span>Color 2</span></li>
+        <li><span>Color 3</span></li>
+      </ul>
+    
+  </main>
+
+
+  <script>
+    
+    // Navigation d'une section à l'autre
+
+  </script>
+  
+</body>
+</html>
