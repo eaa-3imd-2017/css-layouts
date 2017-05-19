@@ -2,7 +2,7 @@
 
 **Exemple de chargement de la fonte Baton Turbo**
 
-Cet exemple montre comment charger les différentes variantes de la fonte avec la méthode @font-face.
+[Cet exemple](https://eaa-3imd-2017.github.io/css-layouts/batonturbo.html) montre comment charger les différentes variantes de la fonte avec la méthode @font-face. Regardez [le code source de la page](https://github.com/eaa-3imd-2017/css-layouts/blob/master/batonturbo.html) pour voir comment les différentes variantes sont chargées.
 
 La fonte Baton Turbo propose cinq épaisseurs différentes, allant de *Regular* à *Heavy*. Voici comment des niveaux d'épaisseur peuvent être définis avec la propriété CSS font-weight:
 
