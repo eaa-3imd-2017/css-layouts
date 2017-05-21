@@ -40,6 +40,16 @@ Un effet de coin transparent, obtenu avec un dégradé CSS.
 * [Article de Lea Verou](http://lea.verou.me/2011/03/beveled-corners-negative-border-radius-with-css3-gradients/) sur cette technique
 * [Documentation couleurs et dégradés](http://cours-web.ch/css/color)
 
+## grille.html
+
+Un exemple utilisant le "CSS Grid Layout".
+
+* [Page d'exemple](grille.html)
+* [Un article explicatif](https://www.alsacreations.com/article/lire/1388-css3-grid-layout.html) (par Raphaël Goetter) 
+
+
+------
+
 ## Licence 
 
 Le code est mis à disposition sans restrictions de licence et peut être utilisé librement ([The Unlicense](http://unlicense.org/)).
