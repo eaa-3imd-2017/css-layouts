@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Carousel Layout</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://eaa-3imd-2017.github.io/header-generique/header-generique.css">
+  <style>
+
+  body {
+    background: #ddd;
+    font-family: "Avenir Next", sans-serif;
+  }
+
+  .cadre {
+    padding: 2em;
+    max-width: 30em;
+    margin: 0 auto;
+  }
+
+  .liste ul,
+  .legende p {
+    border: 0.3em solid MediumSeaGreen;
+    border-radius: 1em;
+    background: white;
+    padding: 1em;
+    margin-top: 0;
+  }
+
+  .liste ul {
+    padding-left: 2em;
+  }
+
+  .svg-image object {
+    border: 1px dashed black;
+  }
+
+  @media only screen and (min-width: 50em) {
+      
+    /* Définition de la Grille CSS */
+
+    .cadre {
+      display: grid;
+      grid-template-columns: 1fr 10em 1em 10em 1fr;
+      grid-gap: 2em;
+      grid-template-areas: 
+        "svg1 liste1 . liste2 svg2"
+        "legende1 legende1 . legende2 legende2";
+      max-width: 70em;
+    }
+
+    /* Placement des objets */
+    
+    #dog{
+      grid-area: svg1;
+    }
+
+    #alien {
+      grid-area: svg2;
+    }
+
+    #liste-1 {
+      grid-area: liste1;
+    }
+
+    #liste-2 {
+      grid-area: liste2;
+    }
+
+    #legende-1 {
+      grid-area: legende1;
+    }
+
+    #legende-2 {
+      grid-area: legende2;
+    }
+
+    /* Fin de la grille CSS */
+
+
+  }
+
+  </style>
+</head>
+<body>
+  <nav id="nav-projets"></nav>
+
+  <main class="cadre">
+
+    <section id="dog" class="svg-image">
+      <object id="svg-dog" type="image/svg+xml" data="svg/dog.svg"></object>
+    </section>
+
+    <section id="liste-1" class="liste">
+      <ul>
+        <li>Pellentesque</li>
+        <li>Efficitur</li> 
+        <li>Consectetur sit amet</li>
+        <li>Suspendisse</li>
+      </ul>
+    </section>
+
+    <section id="legende-1" class="legende">
+      <p>Pellentesque efficitur elit blandit, suscipit ligula sed, elementum magna. Praesent metus magna, posuere id consectetur sit amet, convallis eu urna. Suspendisse pulvinar eros quis imperdiet porta. Nunc condimentum eros ac eros luctus ultricies. Nam libero nunc, iaculis vitae pulvinar et, sollicitudin vel massa. Vivamus lorem lorem, accumsan ut massa quis, venenatis ornare eros. Nam tincidunt eget orci sit amet eleifend. Suspendisse at tincidunt enim, molestie dictum purus.</p>
+    </section>
+
+
+    <section id="alien" class="svg-image">
+      <object id="svg-alien" type="image/svg+xml" data="svg/alien_monster.svg"></object>
+    </section>
+
+    <section id="liste-2" class="liste">
+      <ul>
+        <li>Sollicitudin</li>
+        <li>Vivamus lorem lorem</li> 
+        <li>Nam libero nunc</li>
+        <li>Praesent metus magna</li>
+      </ul>
+    </section>
+
+    <section id="legende-2" class="legende">
+      <p>Pellentesque efficitur elit blandit, suscipit ligula sed, elementum magna. Praesent metus magna, posuere id consectetur sit amet, convallis eu urna. Suspendisse pulvinar eros quis imperdiet porta. Nunc condimentum eros ac eros luctus ultricies. Nam libero nunc, iaculis vitae pulvinar et, sollicitudin vel massa. Vivamus lorem lorem, accumsan ut massa quis, venenatis ornare eros. Nam tincidunt eget orci sit amet eleifend. Suspendisse at tincidunt enim, molestie dictum purus.</p>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <small>contenu pied de page</small>
+  
+  </footer>
+  <script>
+ 
+  </script>
+  <script src='https://eaa-3imd-2017.github.io/header-generique/header-generique.js'></script>
+  
+</body>
+</html>
