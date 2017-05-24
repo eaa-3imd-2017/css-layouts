@@ -47,6 +47,11 @@ Un exemple utilisant le "CSS Grid Layout".
 * [Page d'exemple](grille.html)
 * [Un article explicatif](https://www.alsacreations.com/article/lire/1388-css3-grid-layout.html) (par Raphaël Goetter) 
 
+## grid1.html
+
+Encore un exemple de "CSS Grid Layout".
+
+* [Page d'exemple](grid1.html)
 
 ------
 

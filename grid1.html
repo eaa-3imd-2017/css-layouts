@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Carousel Layout</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+
+  body {
+    background: ivory;
+    font-family: "Avenir Next", sans-serif;
+  }
+
+  .cadre {
+    /*padding: 2em;
+    max-width: 30em;
+    margin: 0 auto;*/
+    padding: 2vmin;
+    height: 100vh;
+  }
+
+  section {
+    font-size: 10vmin;
+    background: silver;
+    display: flex;
+    justify-content: center;
+  }
+
+  section p {
+    margin: auto;
+}
+
+  /* Définition de la Grille CSS */
+
+  .cadre {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2vmin;
+  }
+
+  /* Placement des objets */
+  
+  #a{
+    grid-column-start: 4;
+    grid-column-end: 6;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #b {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  #c {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #d {
+    grid-column-start: 5;
+    grid-column-end: 6;
+  }
+
+  #e {
+  }
+
+  #f {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  </style>
+</head>
+<body>
+
+  <main class="cadre">
+
+    <section id="a">
+      <p>
+        A
+      </p>
+    </section>
+
+    <section id="b">
+      <p>
+        B
+      </p>
+    </section>
+
+    <section id="c">
+      <p>
+        C
+      </p>
+    </section>
+
+    <section id="d">
+      <p>
+        D
+      </p>
+    </section>
+
+    <section id="e">
+      <p>
+        E
+      </p>
+    </section>
+
+    <section id="f">
+      <p>
+        F
+      </p>
+    </section>
+
+  </main>
+  
+</body>
+</html>
